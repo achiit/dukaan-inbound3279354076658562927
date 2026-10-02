@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>श्री विनायक मारुति वर्कशॉप, डिगाव</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@500;700&family=Mukta:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3F4F7; --ink:#14213D; --panel:#FFFFFF; --line:#D5D9E3;
+  --sign:#F2B705; --sign-ink:#14213D; --muted:#4A5675;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0F1830;--ink:#F3F4F7;--panel:#17233F;--line:#2B3A5E;--muted:#A9B4CF}
+}
+:root[data-theme="dark"]{--bg:#0F1830;--ink:#F3F4F7;--panel:#17233F;--line:#2B3A5E;--muted:#A9B4CF}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.7 "Mukta","Noto Sans Devanagari",system-ui,sans-serif}
+h1,h2,h3{font-family:"Teko","Mukta",sans-serif;line-height:1.05;margin:0}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+.sign{background:var(--sign);color:var(--sign-ink);border-bottom:8px solid var(--ink);padding:48px 0 40px}
+.sign small{display:block;font-weight:600;font-size:1.05rem}
+.sign h1{font-weight:700;font-size:clamp(2.8rem,10vw,5.6rem);margin:8px 0 6px}
+.sign p{margin:0 0 24px;font-size:1.15rem;max-width:34ch}
+.btn{display:inline-block;background:var(--sign-ink);color:#fff;text-decoration:none;font-weight:600;padding:12px 24px;border-radius:4px;margin:0 8px 8px 0}
+.btn.alt{background:transparent;color:var(--sign-ink);border:2px solid var(--sign-ink);padding:10px 22px}
+.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+section{padding:48px 0}
+h2{font-size:2.4rem;font-weight:700;margin-bottom:16px}
+.list{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0;border:1px solid var(--line);background:var(--panel)}
+.list div{padding:16px 20px;border:1px solid var(--line);margin:-1px 0 0 -1px}
+.list b{display:block;font-size:1.1rem}
+.list span{color:var(--muted);font-size:.98rem}
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.info h3{font-size:1.5rem;color:var(--muted)}
+.info p{margin:4px 0 0;font-size:1.15rem}
+footer{border-top:8px solid var(--sign);padding:20px 0;color:var(--muted);font-size:.95rem}
+</style>
+</head>
+<body>
+<header class="sign">
+  <div class="wrap">
+    <small>मारुति गाड़ियों के लिए भरोसेमंद वर्कशॉप</small>
+    <h1>श्री विनायक मारुति वर्कशॉप</h1>
+    <p>डिगाव — सर्विसिंग, रिपेयर और पूरी देखभाल, एक ही जगह।</p>
+    <a class="btn" href="tel:+91XXXXXXXXXX">अभी कॉल करें</a>
+    <a class="btn alt" href="#sampark">पता और समय देखें</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <section>
+    <h2>हमारी सेवाएँ</h2>
+    <div class="list">
+      <div><b>जनरल सर्विसिंग</b><span>तेल, फ़िल्टर और पूरी जाँच</span></div>
+      <div><b>इंजन रिपेयर</b><span>आवाज़, धुआँ और पावर की दिक्कत</span></div>
+      <div><b>ब्रेक और क्लच</b><span>जाँच, मरम्मत और बदलाव</span></div>
+      <div><b>सस्पेंशन और स्टीयरिंग</b><span>झटके और खिंचाव का इलाज</span></div>
+      <div><b>बैटरी और इलेक्ट्रिकल</b><span>बैटरी, वायरिंग, लाइट</span></div>
+      <div><b>AC रिपेयर</b><span>कूलिंग और गैस रिफिल</span></div>
+      <div><b>डेंटिंग और पेंटिंग</b><span>खरोंच और डेंट की मरम्मत</span></div>
+      <div><b>व्हील अलाइनमेंट और बैलेंसिंग</b><span>सीधी और स्मूथ चाल के लिए</span></div>
+    </div>
+  </section>
+
+  <section id="sampark">
+    <h2>संपर्क</h2>
+    <div class="info">
+      <div><h3>पता</h3><p>श्री विनायक मारुति वर्कशॉप,<br>डिगाव</p></div>
+      <div><h3>फ़ोन</h3><p><a href="tel:+91XXXXXXXXXX" style="color:inherit">+91 XXXXXXXXXX</a></p></div>
+      <div><h3>खुलने का समय</h3><p>सोमवार से शनिवार<br>सुबह 9 से शाम 7 बजे</p></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© श्री विनायक मारुति वर्कशॉप, डिगाव</div>
+</footer>
+</body>
+</html>
